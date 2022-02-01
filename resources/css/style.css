@@ -288,7 +288,9 @@ section {
 .grid-about-items hr {
   margin-top: 30px;
   width: 90px;
-  border: 2px solid #007bff;
+  height:3px;
+  background: #007bff;
+  display:inline-block;
   margin-left: 10px;
 }
 .about-title {
@@ -347,7 +349,9 @@ section {
 }
 .grid-services-items hr {
   width: 90px;
-  border: 2px solid #007bff;
+  height:3px;
+  background: #007bff;
+  display:inline-block;
   margin-left: 10px;
   margin-top: 30px;
 }
