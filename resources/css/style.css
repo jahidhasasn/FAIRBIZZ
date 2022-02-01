@@ -1,0 +1,807 @@
+/*========================================================
+        Templete Name: Palu Lipkin - Portfolio Template
+        Templete URI : 
+        Description  : An Awesome Portfolio Template
+        Author       : Md.Jahid Hasan Noyon
+        Author Url   : 
+        Support      : noyonj94@gmail.com
+        Verson       : 1.0
+========================================================*/
+
+/*========================================================
+        CSS INDEX
+        =========
+        01. COMMON CSS
+        02. HERO
+        03. ABOUT
+        04. SERVICES
+        05. CASES
+        06. PORTFOLIO
+        07. TESTIMONIAL
+        08. CONTACT
+        09. FOOTER
+========================================================*/
+
+/*========================================================
+
+        01. COMMON CSS
+
+========================================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #fff;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-weight: 400;
+  font-size: 10px;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 400%;
+}
+h3 {
+  font-size: 140%;
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: #333333;
+  font-weight: bold;
+}
+h4 {
+  font-size: 160%;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+ul li {
+  list-style: none;
+}
+p {
+  font-weight: 400;
+  color: #828282;
+  font-size: 160%;
+}
+
+/* REUSEABLE COMPNENT */
+.row {
+  max-width: 1180px;
+  margin: auto;
+}
+section {
+  padding: 120px 0;
+}
+.btn:link,
+.btn:visited,
+.btn {
+  width: 200px;
+  background: #08237e;
+  display: inline-block;
+  text-align: center;
+  font-size: 160%;
+  padding: 10px 0;
+  border: 2px solid #08237e;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+/*========================================================
+        01. HERO
+========================================================*/
+#hero {
+  width: 100%;
+  height: 100vh;
+}
+.top-hed {
+  background: #f7f7fd;
+  height: 60px;
+  padding-top: 20px;
+}
+.grid-top-hed-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-top-hed-items p {
+  font-size: 140%;
+  font-weight: 400;
+  color: #777777;
+}
+.grid-top-hed-items a {
+  color: #08237e;
+  font-weight: 500;
+}
+.grid-top-hed-items ul {
+  float: right;
+}
+.grid-top-hed-items ul li {
+  display: inline-block;
+}
+.grid-top-hed-items ul li a {
+  color: #777777;
+  font-size: 180%;
+  margin: 0 5px;
+}
+.med-hed {
+  height: 80px;
+}
+.grid-med-hed-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.logo {
+  margin-top: 25px;
+}
+.grid-med-info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-med-info-items {
+  padding-left: 70px;
+}
+.info-items {
+  margin-top: -20px;
+}
+.info-items ion-icon {
+  font-size: 180%;
+  float: left;
+  color: #08237e;
+}
+.info-items h5 {
+  font-size: 140%;
+  font-weight: 400;
+  color: #08237e;
+  margin-left: 25px;
+}
+.grid-med-info-items p {
+  font-size: 130%;
+  color: #777777;
+  margin-top: -20px;
+}
+.slider-area {
+  background: #19307d;
+  height: 80vh;
+}
+.main-menu {
+  background: #0668de;
+  height: 80px;
+  z-index: 980;
+}
+
+.grid-menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-menu-items:nth-child(1) {
+  width: 900px;
+}
+.menu {
+  padding-top: 27px;
+  padding-left: 35px;
+}
+.menu a:hover {
+  text-decoration: none;
+}
+.grid-menu-items ul li {
+  display: inline-block;
+}
+.grid-menu-items ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 160%;
+  font-weight: 600;
+  padding: 0 20px;
+}
+.btn-menu {
+  width: 150px;
+  margin-top: 15px;
+  border-radius: 70px;
+}
+.btn-menu a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 100%;
+}
+.btn-menu a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+.slider-items {
+  width: 900px;
+  margin: 130px 0;
+}
+.slider-items h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 520%;
+  letter-spacing: 2px;
+  font-weight: 800;
+  line-height: normal;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: 50px;
+}
+.slider-items a {
+  text-transform: capitalize;
+  font-weight: 800;
+  color: #007bff;
+  margin-left: 13px;
+}
+.slider-items a:hover {
+  text-decoration: none !important;
+}
+.slider-items p {
+  color: #fff;
+  font-size: 160%;
+  margin: 30px 0;
+}
+.slider-items .btn-slider {
+  width: 150px;
+  background: #007bff;
+  color: #000;
+  border: 0;
+  font-weight: 500;
+}
+
+/*========================================================
+        03. ABOUT
+========================================================*/
+.grid-about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-about-items hr {
+  margin-top: 30px;
+  width: 90px;
+  border: 2px solid #007bff;
+  margin-left: 10px;
+}
+.about-title {
+  float: left;
+}
+
+.about-description p {
+  padding-right: 200px;
+  float: left;
+  color: #828282;
+  font-size: 200%;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.about-story {
+  font-size: 160%;
+  color: #828282;
+}
+/* Features  */
+.features {
+  margin-top: 80px;
+}
+.grid-about-features-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 135px;
+}
+.features-img {
+  width: 70px;
+}
+
+/*========================================================
+        04. SERVICES
+========================================================*/
+#services {
+  background: #f7f7fd;
+}
+.grid-services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.grid-services-items:nth-child(2) {
+  width: 800px;
+}
+.service-title {
+  float: left;
+}
+
+.service-description p {
+  float: left;
+  color: #828282;
+  font-size: 200%;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.grid-services-items hr {
+  width: 90px;
+  border: 2px solid #007bff;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+/* SlIDE */
+.uk-child-width-1-2\@s > * {
+  width: 35% !important;
+}
+.uk-card-media-top img {
+  width: 100%;
+  height: 220px;
+}
+.uk-card-body {
+  padding-left: 10px !important;
+  padding-right: 30px !important;
+}
+.uk-card-body p {
+  font-size: 120%;
+}
+.uk-card-title {
+  line-height: 0.4;
+}
+.btn-np a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.btn-np a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #04aa6d;
+  color: black;
+}
+
+.next {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+.uk-position-small {
+  color: #ff0000 !important;
+}
+
+/*========================================================
+        05. CTA
+========================================================*/
+#cta {
+  background: #161616;
+  text-align: center;
+}
+.cta-datils p {
+  color: #ededed;
+}
+.cta-datils h3 {
+  color: #ededed;
+  margin-top: 0;
+}
+.grid-cta-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.btn-cta,
+.btn-cta:hover {
+  float: right;
+  width: 150px;
+  background: #007bff;
+  color: #000;
+  border: 0;
+}
+.btn-cta a,
+.btn-cta a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.play-btn {
+  margin-top: 10px;
+}
+.play-btn ion-icon {
+  float: left;
+  font-size: 300%;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.play-btn-2 span {
+  display: flex;
+  color: #ededed;
+  font-size: 130%;
+  margin-top: 15px;
+}
+/*========================================================
+        06. CASES
+========================================================*/
+.cases-title {
+  float: left;
+}
+.cases-title h2 {
+  font-weight: 700;
+  color: #202020;
+}
+
+.our-cases hr {
+  width: 90px;
+  display: inline-block;
+  border: 2px solid #007bff;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.grid-cases-info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-cases-info-container {
+  width: 1180px;
+}
+.grid-cases-info-items:nth-child(1) {
+  width: 700px;
+}
+.info-des {
+}
+.info-np-icon {
+  text-align: right;
+  font-size: 300%;
+}
+.all-ceses {
+  margin-top: 20px;
+}
+.grid-cases-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.casses-img {
+  width: 270px;
+  height: 200px;
+}
+.ceses h3 {
+  font-size: 180%;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1;
+}
+.ceses a {
+  font-size: 150%;
+  text-decoration: underline;
+}
+
+/*========================================================
+        07. TESTIMONIAL
+========================================================*/
+#testimonial {
+  min-height: 80vh;
+  padding: 30px 0;
+}
+.testimonial-gap {
+}
+.grid-testimonial-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-testimonial-items {
+  min-height: 70vh;
+}
+.grid-testiminial-items:nth-child(1) {
+  background: #f7f7fd;
+  margin: 35px 0;
+}
+.clint {
+  padding: 150px 0;
+  padding-left: 175px;
+}
+.clint p {
+  padding-right: 200px;
+}
+.clint-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+}
+.role span {
+  margin-left: 10px;
+  margin-top: -5px;
+}
+.role h3 {
+  margin-left: 60px;
+  font-size: 160%;
+  color: #333333;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 2px;
+}
+.grid-form-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.grid-form-items:nth-child(1) {
+  width: 500px;
+  background: #007bff;
+  min-height: 85vh;
+}
+.grid-form-items:nth-child(2) {
+  background: #f7f7fd;
+  margin: 35px 0;
+}
+.form-title {
+  padding: 60px 80px;
+}
+.form-title h3 {
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+  font-size: 300%;
+}
+.single-form input[type="text"],
+.single-form input[type="email"],
+.single-form textarea {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000;
+  font-size: 140%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.btn-full {
+  text-transform: uppercase;
+  font-size: 160%;
+  text-align: ;
+  margin-top: 50px;
+  font-weight: 600;
+  padding: 16px;
+}
+.clint-icon ion-icon {
+  float: left;
+}
+.grid-client-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
+  margin-top: 80px;
+  padding: 0 45px;
+}
+
+/*========================================================
+        08. FAQ
+========================================================*/
+#faq {
+}
+.grid-faq-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.faq-img {
+  max-width: 70%;
+}
+.faw-title {
+  float: left;
+}
+.faw-title h2 {
+  font-weight: 700;
+  color: #202020;
+}
+
+.grid-faq-items hr {
+  width: 90px;
+  display: inline-block;
+  border: 2px solid #007bff;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.faq-description p {
+  display: inline-block;
+}
+.grid-faq-items:nth-child(2) {
+  padding: 70px 0;
+}
+.fa-question ul li {
+  border: 2px solid rgba(0, 0, 0, 0.301);
+  padding: 8px;
+}
+.uk-open {
+  background: #f7f7fd;
+}
+.uk-accordion-title {
+  font-weight: 600;
+  font-weight: 160%;
+}
+.fa-question {
+  margin-top: 20px;
+}
+
+/*========================================================
+        09. BLOG
+========================================================*/
+#blog {
+  background: #f7f7fd;
+}
+.blog-title {
+  float: left;
+}
+.blog-title h2 {
+  font-weight: 700;
+  color: #202020;
+}
+
+.blog-section hr {
+  width: 90px;
+  display: inline-block;
+  border: 2px solid #007bff;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.blog-description {
+  width: 650px;
+}
+.blog-description p {
+  display: inline-block;
+}
+
+.grid-blog-post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.grid-post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: px;
+}
+.blog-img {
+  width: 360px;
+  height: 245px;
+}
+.post {
+  padding: 35px 60px 80px 20px;
+  background: #fff;
+}
+.post h3 {
+  font-size: 160%;
+  font-weight: 600;
+}
+.post p {
+  font-size: 130%;
+}
+.post p a {
+  margin-left: 5px;
+  font-size: 135%;
+}
+.read-more {
+  font-size: 120%;
+  text-decoration: underline;
+}
+
+/*========================================================
+        10. FOOTER
+========================================================*/
+#footer {
+  background: url(img/footer-bg.jpg);
+  padding-top: 120px;
+}
+.footer-info {
+  margin-bottom: 40px;
+}
+.grid-footer-info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.about-us {
+  padding-right: 100px;
+}
+.about-us p,
+.adress p {
+  font-size: 130%;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.single-form input[type="email"] {
+  width: 250px;
+  background: transparent;
+  border: 1px solid #f7f7fd;
+  color: #f7f7fd;
+  font-size: 140%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.useful-title h2 {
+  color: #f7f7fd;
+  font-size: 200%;
+  font-weight: 600;
+  margin-left: 30px;
+}
+.grid-useful-link-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.useful-link ul li {
+  text-align: left;
+  margin: 10px 0;
+}
+.useful-link ul li a {
+  color: #f7f7fd;
+  font-size: 140%;
+  text-align: left;
+  text-transform: capitalize;
+}
+.contact h2 {
+  color: #f7f7fd;
+  font-size: 200%;
+  font-weight: 600;
+}
+.follow-us {
+}
+.follow-us h3 {
+  color: #f7f7fd;
+  margin-right: 20px;
+}
+.follow-us ul {
+  padding-left: 0;
+}
+.follow-icon ul li {
+  display: inline-block;
+}
+.follow-icon ion-icon {
+  font-size: 110%;
+  color: #fff;
+  margin: 0 3px;
+}
+
+.grid-copyright-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.copyright p {
+  color: #f7f7fd;
+  font-size: 160%;
+}
+.condition-link ul {
+  padding-left: 50px;
+}
+.condition-link ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.condition-link ul li a {
+  color: #f7f7fd;
+  font-size: 150%;
+}
