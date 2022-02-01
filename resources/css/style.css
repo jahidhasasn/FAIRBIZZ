@@ -462,7 +462,8 @@ section {
 .our-cases hr {
   width: 90px;
   display: inline-block;
-  border: 2px solid #007bff;
+  height:3px;
+  background: #007bff;
   margin-left: 10px;
   margin-top: 30px;
 }
@@ -625,7 +626,8 @@ section {
 .grid-faq-items hr {
   width: 90px;
   display: inline-block;
-  border: 2px solid #007bff;
+  height:3px;
+  background: #007bff;
   margin-left: 10px;
   margin-top: 30px;
 }
@@ -667,7 +669,8 @@ section {
 .blog-section hr {
   width: 90px;
   display: inline-block;
-  border: 2px solid #007bff;
+  height:3px;
+  background: #007bff;
   margin-left: 10px;
   margin-top: 30px;
 }
